@@ -91,6 +91,7 @@ function removeFooterElements() {
     removeElement('.bubble');
     removeElement('.agario-promo');
     removeElement('.promo-badge-container');
+
 }
 
 // Remove an element by its id
@@ -103,6 +104,7 @@ function removeElementById(id) {
 
 removeElementById("agar-io_970x90");
 removeElementById("socialButtons");
+removeElementById("mainui-promo");
 
 function customizeMainUI() {
     var mainUIOffers = document.getElementById('mainui-offers');
@@ -133,7 +135,7 @@ window.addEventListener('load', function() {
     var style = document.createElement('style');
         style.innerHTML = `
             :root {
-                --bottom-banner-height: 1px !important;
+                --bottom-banner-height: 0px !important;
             }
 
             #background,
